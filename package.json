@@ -3,23 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "npx wdio run wdio.conf.js"
+    "test": "npx wdio run wdio.conf.js",
+    "tests": "./node_modules/.bin/wdio ./node_modules/.bin/wdio wdio.conf.js",
+    "web": "TAGS='web' PLATORM=web npx wdio run wdio.conf.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wdio/cli": "^6.3.6",
-    "@wdio/local-runner": "^6.3.6",
-    "@wdio/mocha-framework": "^6.3.6",
-    "@wdio/spec-reporter": "^6.3.6",
-    "@wdio/sync": "^6.3.6",
-    "chromedriver": "^83.0.1",
-    "wdio-chromedriver-service": "^6.0.3",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/eslint-parser": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/register": "^7.13.16",
+    "@babel/traverse": "^7.14.2",
+    "@babel/types": "^7.14.2",
+    "@wdio/cli": "^7.6.0",
+    "@wdio/local-runner": "^7.6.0",
+    "@wdio/mocha-framework": "^7.6.0",
+    "@wdio/spec-reporter": "^7.6.0",
+    "@wdio/sync": "^7.6.0",
+    "chromedriver": "^90.0.0",
+    "wdio-chromedriver-service": "^7.1.0",
     "wdio-timeline-reporter": "^5.1.4",
-    "webdriverio": "^6.1.25"
+    "webdriverio": "^7.6.0"
   },
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.3.4"
   }
 }

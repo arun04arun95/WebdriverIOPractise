@@ -1,16 +1,16 @@
 {
-  "start": "2020-08-10T14:24:01.565Z",
-  "end": "2020-08-10T14:24:05.346Z",
+  "start": "2021-05-17T12:45:17.871Z",
+  "end": "2021-05-17T12:45:19.717Z",
   "capabilities": {
     "acceptInsecureCerts": true,
     "browserName": "chrome",
-    "browserVersion": "84.0.4147.105",
+    "browserVersion": "90.0.4430.212",
     "chrome": {
-      "chromedriverVersion": "83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})",
-      "userDataDir": "/var/folders/pc/xmz9lfbn6wzg52zjhd6h50w00000gn/T/.com.google.Chrome.ja2t6e"
+      "chromedriverVersion": "90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429})",
+      "userDataDir": "/var/folders/pc/xmz9lfbn6wzg52zjhd6h50w00000gn/T/.com.google.Chrome.6LoE5o"
     },
     "goog:chromeOptions": {
-      "debuggerAddress": "localhost:56339"
+      "debuggerAddress": "localhost:50173"
     },
     "networkConnectionEnabled": false,
     "pageLoadStrategy": "normal",
@@ -24,48 +24,42 @@
       "script": 30000
     },
     "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:largeBlob": true,
     "webauthn:virtualAuthenticators": true,
-    "sessionId": "b4b9917712b43b252c8701f479ef794c"
+    "sessionId": "1db75899be2ec2dd87dcd95805d4e00d"
   },
   "baseUrl": "http://localhost",
   "framework": "mocha",
   "mochaOpts": {
     "timeout": 60000,
-    "ui": "bdd"
+    "ui": "bdd",
+    "require": [
+      "@babel/register"
+    ]
   },
-  "duration": 3781,
+  "duration": 1846,
   "suites": [
     {
       "title": "Launch browser chrome",
-      "duration": 3602,
-      "start": "2020-08-10T14:24:01.687Z",
-      "end": "2020-08-10T14:24:05.289Z",
+      "duration": 1737,
+      "start": "2021-05-17T12:45:17.874Z",
+      "end": "2021-05-17T12:45:19.611Z",
       "tests": [
         {
           "title": "Open WebdriverIO get title",
-          "start": "2020-08-10T14:24:01.687Z",
-          "end": "2020-08-10T14:24:04.543Z",
-          "duration": 2856,
+          "start": "2021-05-17T12:45:17.874Z",
+          "end": "2021-05-17T12:45:19.058Z",
+          "duration": 1184,
           "state": "passed",
-          "screenshots": [
-            "/Users/arunkumar/Documents/WorkSpace/WebdriverIOPractise/testResults/file-1597069443985.jpeg",
-            "/Users/arunkumar/Documents/WorkSpace/WebdriverIOPractise/testResults/file-1597069444542.jpeg"
-          ]
+          "screenshots": []
         },
         {
           "title": "Navigate to WebdriverIO docs page and get title ",
-          "start": "2020-08-10T14:24:04.543Z",
-          "end": "2020-08-10T14:24:05.288Z",
-          "duration": 745,
-          "state": "failed",
-          "screenshots": [
-            "/Users/arunkumar/Documents/WorkSpace/WebdriverIOPractise/testResults/file-1597069445287.jpeg"
-          ],
-          "error": {
-            "type": "AssertionError",
-            "message": "expected 'WebdriverIO · Next-gen browser and mobile automation test framework for Node.js' to equal 'WebdriverIO · TNext-gen browser and mobile automation test framework for Node.js'",
-            "stack": "AssertionError: expected 'WebdriverIO · Next-gen browser and mobile automation test framework for Node.js' to equal 'WebdriverIO · TNext-gen browser and mobile automation test framework for Node.js'\n    at Context.<anonymous> (/Users/arunkumar/Documents/WorkSpace/WebdriverIOPractise/test/specs/duckDuckgo.js:22:30)"
-          }
+          "start": "2021-05-17T12:45:19.058Z",
+          "end": "2021-05-17T12:45:19.610Z",
+          "duration": 552,
+          "state": "passed",
+          "screenshots": []
         }
       ],
       "hooks": []
@@ -75,8 +69,8 @@
     "/Users/arunkumar/Documents/WorkSpace/WebdriverIOPractise/test/specs/duckDuckgo.js"
   ],
   "state": {
-    "passed": 1,
-    "failed": 1,
+    "passed": 2,
+    "failed": 0,
     "skipped": 0
   }
 }
